@@ -41,7 +41,9 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     private PowerManager.WakeLock mWakeLock;
 
     //private String ffmpeg_link = "rtmp://live:live@128.122.151.108:1935/live/test.flv";
-    private String ffmpeg_link = Environment.getExternalStorageDirectory() + "/test.flv";
+//    private String ffmpeg_link = Environment.getExternalStorageDirectory() + "/test.flv";
+
+    private String ffmpeg_link = "rtmps://live-api-s.facebook.com:443/rtmp/1571490729849284?s_bl=1&s_psm=1&s_sw=0&s_vt=api-s&a=AbxNvLd5vRrAWCXC";
 
     private volatile FFmpegFrameRecorder recorder;
     boolean recording = false;
